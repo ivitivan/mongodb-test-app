@@ -117,6 +117,7 @@
 		}
 	}
 
+	// Delete the given entry
 	Entries.prototype.delete = function(id, cb) {
 		$.ajax({
 			url: '/entry/' + id,
@@ -131,6 +132,7 @@
 		});
 	}
 
+	// Starts listening to cliks on entry__deletes
 	Entries.prototype.listen = function() {
 		var entries = this;
 		this.dom.on( "click", ".entry__delete", function( event ) {
