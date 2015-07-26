@@ -1,0 +1,7 @@
+# vim
+*~
+*.swp
+*.swo
+
+# node
+node_modules
