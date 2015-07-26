@@ -1,5 +1,18 @@
+include blocks/entry-adder/entry-adder.jade
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.page
+		h1.page__title.heading_lvl_1 Хей, там!
+		p.paragraph.
+			Форма ниже служит для добавления записи в базу данных. 
+		p.paragraph.
+			Каждая запись имеют свою собственную станичку. Нажав на запись можно попасть на страницу записи. Данная страница является данными в формате JSON.
+		p.paragraph.
+			 Запись также можно удалить, нажав на крестик справа от нее.
+		p.paragraph.
+			Одну запись я уже добавил.
+		h2.heading_lvl_2 Форма для добавления новой записи
+		+entry-adder
+		h2.heading_lvl_2 Наши записи:
+		.entries
